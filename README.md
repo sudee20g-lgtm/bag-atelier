@@ -36,3 +36,15 @@ Tarayıcıda `http://localhost:5180` adresini açın. Kalıcı bir sürüm için
 - Mevzuat parametreleri (asgari ücret, Bağ-Kur oranı, genç girişimci istisnası vb.) 23.11.2026 itibarıyla basın ve meslek kaynaklarından derlenmiştir ve **"Doğrulanmalı"** olarak işaretlidir. GİB, SGK ve Ticaret Bakanlığı'ndan doğruladıktan sonra durumu güncelleyin.
 - Vergi ve teşvik hesapları bilgilendirme amaçlıdır; mali müşavir görüşünün yerini tutmaz.
 - Otomatik fiyat çekme için `src/lib/priceResearch.js` içinde bir sağlayıcı arayüzü vardır. Tarayıcı güvenlik kuralları (CORS) nedeniyle bunun için bir sunucu veya API anahtarı gerekir.
+
+## Canlı site ve yayınlama
+
+Site: **https://sudee20g-lgtm.github.io/bag-atelier/**
+
+Değişiklikleri yayına almak için:
+
+```powershell
+npm run deploy
+```
+
+Bu komut siteyi derler ve `gh-pages` dalına gönderir; GitHub Pages yaklaşık bir dakika içinde güncellenir. Kaynak kodu ayrıca `git push` ile `main` dalına gönderin.
